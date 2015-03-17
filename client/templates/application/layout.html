@@ -1,0 +1,13 @@
+<template name="layout">
+  <div class="container">
+    <header role="navigation"> 
+      <div class="nav navbar-nav">
+        <a class="btn btn-default" href="{{pathFor 'socialList'}}">Зв’язатись зі мною</a>
+        <a class="btn btn-default" href="{{pathFor 'photo'}}">Випадкові картинки</a>
+      </div>
+    </header>
+    <div id="main">
+      {{> yield}}
+    </div>
+  </div>
+</template>
